@@ -1,0 +1,203 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cabeçalho */
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+  }
+  
+  .logo-image {
+    width: 30%;
+    opacity: 100%;
+    border-radius: 4px;
+  }
+  
+  
+  .btn-cadastro {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .btn-cadastro:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Estrutura do corpo */
+  .container {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Menu lateral */
+
+    .side-menu {
+    width: 20%;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .side-menu ul {
+    list-style: none;
+  }
+  
+  .side-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .side-menu-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #bdc3c7;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .side-menu-button:hover {
+    background-color: #95a5a6;
+  }
+
+  .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .side-menu ul li {
+    margin-bottom: 15px;
+  }
+  
+  .side-menu ul li a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .side-menu ul li a:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .side-menu ul li a.active {
+    background-color: #28a745; /* Verde */
+  }
+  
+  .side-menu ul li a.active:hover {
+    background-color: #218838;
+  }
+  
+  
+  /* Conteúdo principal */
+  .content-area {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .placeholder-image {
+    width: 90%;
+    opacity: 30%;
+    border-radius: 8px;
+  }
+
+  /* Rodapé */
+  .footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Estilização dos formulários */
+form {
+  max-width: 600px;
+  margin-top: 1rem;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.content-area {
+  width: 80%;
+  padding: 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Garante que o topo seja respeitado */
+  min-height: 100%;
+  box-sizing: border-box;
+  
+}
+
+.content-area h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}

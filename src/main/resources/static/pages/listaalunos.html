@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Alunos</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="top-header">
+    <div class="logo">Sistema de Notas</div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <!-- Menu lateral -->
+    <nav class="side-menu">
+      <ul id="turma-lista">
+        <!-- Itens de turma serão inseridos dinamicamente via JS -->
+        <!-- Exemplo estático:
+        <li><a href="#" class="active">Turma A</a></li>
+        -->
+      </ul>
+    </nav>
+
+    <!-- Área de conteúdo com lista de alunos -->
+    <main class="content-area">
+      <h2>Alunos da Turma</h2>
+
+      <div class="aluno-grid" id="aluno-container">
+        <!-- Os alunos serão carregados aqui via JS -->
+        <!-- Exemplo de estrutura:
+        <div class="aluno-card">
+          <img src="../img/aluno1.jpg" alt="Foto do Aluno">
+          <p>João da Silva</p>
+        </div>
+        -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    Desenvolvido por [Seu Nome]
+  </footer>
+
+  <script src="../script/listaalunos.js"></script>
+</body>
+</html>

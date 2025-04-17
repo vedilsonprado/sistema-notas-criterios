@@ -3,6 +3,8 @@ package br.senai.notasapi.entities;
 import jakarta.persistence.*;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name = "Curso")
 public class Curso {
@@ -16,9 +18,11 @@ public class Curso {
 	private Integer anoConclusao;
 
 	@OneToMany(mappedBy = "curso")
+	@JsonManagedReference
 	private List<Turma> turmas;
 
 	@OneToMany(mappedBy = "curso")
+	@JsonManagedReference
 	private List<UnidadeCurricular> unidadesCurriculares;
 
 	public Curso() {

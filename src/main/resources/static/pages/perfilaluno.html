@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Perfil do Aluno</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="top-header">
+    <div class="logo">Sistema de Notas</div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <!-- Menu lateral -->
+    <nav class="side-menu">
+      <ul id="turma-lista">
+        <!-- Turmas inseridas dinamicamente via JS -->
+      </ul>
+    </nav>
+
+    <!-- Área de conteúdo dividida -->
+    <main class="content-area">
+      <!-- Parte superior com perfil -->
+      <section class="perfil-aluno-top">
+        <div class="perfil-esquerda">
+          <img src="../img/default-profile.jpg" alt="Foto do Aluno" class="foto-perfil">
+          <div class="info-aluno">
+            <h3 id="nome-aluno">Nome do Aluno</h3>
+            <p id="email-aluno">email@exemplo.com</p>
+          </div>
+        </div>
+        <div class="perfil-direita" id="unidades-buttons">
+          <!-- Botões de Unidades Curriculares serão inseridos via JS -->
+        </div>
+      </section>
+
+      <!-- Parte inferior (opcional futuramente) -->
+      <section class="perfil-aluno-bottom" id="detalhes-unidade">
+        <!-- Aqui poderão ser exibidas notas, critérios etc -->
+      </section>
+    </main>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    Desenvolvido por [Seu Nome]
+  </footer>
+
+  <script src="../script/perfilaluno.js"></script>
+</body>
+</html>

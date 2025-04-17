@@ -1,5 +1,7 @@
 package br.senai.notasapi.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -11,10 +13,12 @@ public class AlunosCriterios {
 	private Long idAlunoCriterio;
 
 	@ManyToOne
+	@JsonBackReference
 	@JoinColumn(name = "idAluno")
 	private Alunos aluno;
 
 	@ManyToOne
+	@JsonBackReference
 	@JoinColumn(name = "idCriterio")
 	private Criterios criterio;
 

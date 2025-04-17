@@ -3,6 +3,9 @@ package br.senai.notasapi.entities;
 import jakarta.persistence.*;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name = "Criterios")
 public class Criterios {
@@ -15,10 +18,12 @@ public class Criterios {
 	private String obtencao;
 
 	@ManyToOne
+	@JsonBackReference
 	@JoinColumn(name = "materia_id")
 	private UnidadeCurricular materia;
 
 	@OneToMany(mappedBy = "criterio")
+	@JsonManagedReference
 	private List<AlunosCriterios> alunos;
 
 	public Criterios() {
